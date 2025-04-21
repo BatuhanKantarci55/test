@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Etimografia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="sabit-menu">
+      <div class="menu-icerik">
+        <div class="site-baslik">Etimografia</div>
+        <ul class="menu-listesi">
+          <li><a href="#" id="sec-sinav" class="aktif">Sınav</a></li>
+          <li><a href="#" id="sec-liste">Liste</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container" id="sinav-alani">
+      <h1>Etimoloji Sınavı</h1>
+
+      <div id="yön-secimi" style="margin-bottom: 1rem; text-align: center;">
+        <input type="radio" id="yon-eski" name="yön" value="eski" checked onchange="yönDegistir()">
+        <label for="yon-eski">Eski Türkçe → Yeni Türkçe</label>
+
+        <input type="radio" id="yon-yeni" name="yön" value="yeni" onchange="yönDegistir()" style="margin-left: 1rem;">
+        <label for="yon-yeni">Yeni Türkçe → Eski Türkçe</label>
+      </div>
+
+      <div id="soru-alani">
+        <h2 id="soru-kelime">---</h2>
+      </div>
+      <input type="text" id="kullanici-cevap" placeholder="Eski / Yeni Türkçe karşılığı" />
+      <button onclick="kontrolEt()">Kontrol Et</button>
+      <button onclick="sonrakiKelime()">Sonraki Kelime</button>
+      <p id="sonuc"></p>
+    </div>
+
+
+    <div class="container" id="liste-alani" style="display: none;">
+      <h1>Kelime Listesi</h1>
+      <!-- Dil Filtresi -->
+      <div id="dil-filtresi" style="margin-bottom: 1rem; text-align: center;">
+        <button onclick="filtreDil('hepsi')" class="filtre-btn aktif">hepsi</button>
+        <button onclick="filtreDil('arapça')" class="filtre-btn dil-arapca">arapça</button>
+        <button onclick="filtreDil('farsça')" class="filtre-btn dil-farsca">farsça</button>
+        <button onclick="filtreDil('fransızca')" class="filtre-btn dil-fransizca">fransızca</button>
+        <button onclick="filtreDil('ingilizce')" class="filtre-btn dil-ingilizce">ingilizce</button>
+      </div>
+
+      <!-- Arama Kutusu -->
+      <input type="text" id="arama-kutusu" placeholder="Kelime ara..." oninput="aramaFiltrele()" />
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th onclick="sirala('eski')" class="siralanabilir">Eski Türkçe 🔽</th>
+            <th>Köken (eski)</th>
+            <th onclick="sirala('yeni')" class="siralanabilir">Yeni Türkçe 🔽</th>
+            <th>Köken (yeni)</th>
+          </tr>
+        </thead>
+        <tbody id="liste-tablosu">
+          <!-- JavaScript ile doldurulacak -->
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <script>
+    let isKontrolEdildi = false; // Başlangıçta kontrol yapılmadı
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const input = document.getElementById("kullanici-cevap");
+
+      input.addEventListener("keydown", function (event) {
+        if (event.key === "Enter") {
+          event.preventDefault(); // Sayfanın yenilenmesini engeller
+
+          if (!isKontrolEdildi) {
+            kontrolEt(); // İlk Enter ile kontrol et
+            isKontrolEdildi = true; // Kontrol yapıldı
+          } else {
+            sonrakiKelime(); // İkinci Enter ile sonraki kelimeye geç
+            isKontrolEdildi = false; // Bir sonraki kelimede tekrar kontrol yapılacak
+          }
+        }
+      });
+    });
+  </script>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
