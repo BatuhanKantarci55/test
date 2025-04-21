@@ -57,20 +57,22 @@
 
       <!-- Arama Kutusu -->
       <input type="text" id="arama-kutusu" placeholder="Kelime ara..." oninput="aramaFiltrele()" />
-      <table>
-        <thead>
-          <tr>
-            <th>#</th>
-            <th onclick="sirala('eski')" class="siralanabilir">Eski Türkçe 🔽</th>
-            <th>Köken (eski)</th>
-            <th onclick="sirala('yeni')" class="siralanabilir">Yeni Türkçe 🔽</th>
-            <th>Köken (yeni)</th>
-          </tr>
-        </thead>
-        <tbody id="liste-tablosu">
-          <!-- JavaScript ile doldurulacak -->
-        </tbody>
-      </table>
+      <div class="tablo-kapsayici">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th onclick="sirala('eski')" class="siralanabilir">Eski Türkçe 🔽</th>
+              <th>Köken (eski)</th>
+              <th onclick="sirala('yeni')" class="siralanabilir">Yeni Türkçe 🔽</th>
+              <th>Köken (yeni)</th>
+            </tr>
+          </thead>
+          <tbody id="liste-tablosu">
+            <!-- JavaScript ile doldurulacak -->
+          </tbody>
+        </table>
+      </div>
     </div>
   </main>
 
