@@ -1,10 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,800&display=swap');
 @media (max-width: 768px) {
-  .my-container {
-    flex-direction: column;
-    padding: 1rem;
+  table th, table td {
+    font-size: 0.85rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  input {
+    width: 100%;
   }
 }
+
 
 
 body {
@@ -311,4 +321,9 @@ table th {
       .filtre-btn.dil-italyanca:hover {
         background-color: #269dc4; /* mavi ton */
         color: white;
+      }
+
+      .tablo-kapsayici {
+        overflow-x: auto;
+        max-width: 100%;
       }
