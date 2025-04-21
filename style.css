@@ -23,6 +23,7 @@ body {
   background: linear-gradient(to bottom right, #6e68ea, #9994fa);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 nav ul {
