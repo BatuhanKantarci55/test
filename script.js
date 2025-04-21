@@ -148,7 +148,29 @@ const kelimeler = [
     { eski: "lider", kokEski: "fransızca", yeni: "önder", kokYeni: "türkçe" },
     { eski: "hikaye", kokEski: "arapça", yeni: "öykü", kokYeni: "türkçe" },
     { eski: "hususi", kokEski: "arapça", yeni: "özel", kokYeni: "türkçe" },
-    { eski: "mahsus", kokEski: "arapça", yeni: "özgü", kokYeni: "türkçe" }
+    { eski: "mahsus", kokEski: "arapça", yeni: "özgü", kokYeni: "türkçe" },
+    { eski: "müseddes", kokEski: "arapça", yeni: "altıgen", kokYeni: "türkçe" },
+    { eski: "mustatil", kokEski: "arapça", yeni: "dikdörtgen", kokYeni: "türkçe" },
+    { eski: "müfret", kokEski: "arapça", yeni: "tekil", kokYeni: "türkçe" },
+    { eski: "cem", kokEski: "arapça", yeni: "çoğul", kokYeni: "türkçe" },
+    { eski: "istiklal", kokEski: "arapça", yeni: "bağımsızlık", kokYeni: "türkçe" },
+    { eski: "müstakil", kokEski: "arapça", yeni: "bağımsız", kokYeni: "türkçe" },
+    { eski: "tekrarlamak", kokEski: "arapça", yeni: "yinelemek", kokYeni: "türkçe" },
+    { eski: "vaziyet", kokEski: "arapça", yeni: "durum", kokYeni: "türkçe" },
+    { eski: "ahval", kokEski: "arapça", yeni: "durumlar", kokYeni: "türkçe" },
+    { eski: "murafaa", kokEski: "arapça", yeni: "duruşma", kokYeni: "türkçe" },
+    { eski: "muhakeme", kokEski: "arapça", yeni: "yargılama", kokYeni: "türkçe" },
+    { eski: "hakim", kokEski: "arapça", yeni: "yargıç", kokYeni: "türkçe" },
+    { eski: "kanuni", kokEski: "arapça", yeni: "yasal", kokYeni: "türkçe" },
+    { eski: "kanun", kokEski: "arapça", yeni: "yasa", kokYeni: "türkçe" },
+    { eski: "teşri", kokEski: "arapça", yeni: "yasama", kokYeni: "türkçe" },
+    { eski: "icra", kokEski: "arapça", yeni: "yürütme", kokYeni: "türkçe" },
+    { eski: "müsnet", kokEski: "arapça", yeni: "yüklem", kokYeni: "türkçe" },
+    { eski: "vatandaş", kokEski: "arapça", yeni: "yurttaş", kokYeni: "türkçe" },
+    { eski: "metot", kokEski: "fransızca", yeni: "yöntem", kokYeni: "türkçe" },
+    { eski: "mana", kokEski: "arapça", yeni: "anlam", kokYeni: "türkçe" },
+    { eski: "zeka", kokEski: "arapça", yeni: "anlak", kokYeni: "türkçe" },
+    { eski: "teori", kokEski: "fransızca", yeni: "kuram", kokYeni: "türkçe" }
 ];
 
 
